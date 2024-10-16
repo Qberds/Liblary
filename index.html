@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бібліотека</title>
+    <link rel="stylesheet" href="/stayl.css">
+</head>
+<body>
+
+    <header>
+        <div class="headers">
+            <nav>
+                <ul>
+                    <li><a href="#books">Книги</a></li>
+                    <li><a href="#visitors">Відвідувачі</a></li>
+                    <li><a href="#cards">Картки</a></li>
+                    <li><a href="#statistics">Статистика</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section id="books">
+            <h2>Робота з книгами</h2>
+            <div class="add-book-form">
+                <input type="text" id="book-title" placeholder="Назва книги">
+                <input type="text" id="book-author" placeholder="Автор книги">
+                <button id="add-book-button">Додати книгу</button>
+            </div>
+        
+            <div class="search-book-form">
+                <input type="text" id="search-book" placeholder="Пошук книги">
+                <button id="search-book-button">Пошук</button>
+            </div>
+            
+            <div class="book-list">
+                <h3>Список книг</h3>
+                <ul id="book-list-ul">
+                    
+                </ul>
+            </div>
+        </section>
+
+        <section id="visitors">
+            <h2>Робота з відвідувачами</h2>
+            <div class="add-visitor-form">
+                <input type="text" id="visitor-name" placeholder="Ім'я відвідувача">
+                <input type="text" id="visitor-phone" placeholder="Номер телефону">
+                <button id="add-visitor-button">Додати відвідувача</button>
+            </div>
+            <div class="visitor-list">
+                <h3>Список відвідувачів</h3>
+                <ul id="visitor-list-ul"></ul>
+            </div>
+        </section>
+
+        <section id="cards">
+            <h2>Робота з картками</h2>
+            <div class="card-issue-form">
+                <input type="text" id="visitor-name-issue" placeholder="Ім'я відвідувача">
+                <input type="text" id="book-title-issue" placeholder="Назва книги">
+                <button id="issue-book-button">Видати книгу</button>
+            </div>
+
+            <div class="issued-books-list">
+                <h3>Видані книги</h3>
+                <ul id="issued-books-ul"></ul>
+            </div>
+        </section>
+
+        <section id="statistics">
+            <h2>Статистика</h2>
+            <div>
+                <h3>5 найпопулярніших книг</h3>
+                <ul id="top-books-ul"></ul>
+            </div>
+            <div>
+                <h3>5 найактивніших відвідувачів</h3>
+                <ul id="top-visitors-ul"></ul>
+            </div>
+        </section>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
